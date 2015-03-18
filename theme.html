@@ -129,11 +129,10 @@
                 {% if post.photos or post.content|striptags|wordcount > 0 %}
                 {% for photo in post.photos %}
                 {% if photo and loop.index == 1 %}
-          <!--      <div class="image">
+               <div class="image">
                   <a href="{{ post.permalink }}">
-                    <img src="{{ photo.square_75 }}" alt="Featured Photo" />
                   </a>
-                </div> -->
+                </div> 
                 {% endif %}
                 {% endfor %}
                 {% endif %}
